@@ -23,6 +23,7 @@ const App = () => {
 
     try {
       const { data } = await getUsers()
+      console.log(data.data)
 
       const transformedResponse = transformUsers(data.data)
 
